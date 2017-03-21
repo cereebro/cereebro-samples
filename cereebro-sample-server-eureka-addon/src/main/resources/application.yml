@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: cereebro-server-eureka
+  jackson:
+    serialization:
+      indent_output: true
+      write-dates-as-timestamps: false
+
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+    serviceUrl:
+      defaultZone: http://localhost/eureka
+
+cereebro:
+  server:
+    system:
+      name: cereebro-sample-system
+      
+logging:
+  level:
+    io.cereebro: DEBUG
