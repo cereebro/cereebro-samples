@@ -64,11 +64,48 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <installAtEnd>true</installAtEnd>
         <deployAtEnd>true</deployAtEnd>
+        <cereebro.version>0.0.1</cereebro.version>
     </properties>
 
     <modules>
-        <module>cereebro-sample-server-eureka-addon</module>
+        <module>cereebro-sample-boot-snitch</module>
+        <module>cereebro-sample-boot-server</module>
+        <module>cereebro-sample-cloud-netflix-server-eureka-addon</module>
+        <module>cereebro-sample-cloud-netflix-server-eureka-client</module>
+        <module>cereebro-sample-cloud-netflix-snitch-app1</module>
+        <module>cereebro-sample-cloud-netflix-snitch-app2</module>
     </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- Cereebro starters -->
+            <dependency>
+                <groupId>io.cereebro</groupId>
+                <artifactId>cereebro-server-eureka-addon-spring-cloud-starter</artifactId>
+                <version>${cereebro.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.cereebro</groupId>
+                <artifactId>cereebro-server-spring-boot-starter</artifactId>
+                <version>${cereebro.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.cereebro</groupId>
+                <artifactId>cereebro-eureka-client-spring-cloud-starter</artifactId>
+                <version>${cereebro.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.cereebro</groupId>
+                <artifactId>cereebro-snitch-netflix-spring-cloud-starter</artifactId>
+                <version>${cereebro.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.cereebro</groupId>
+                <artifactId>cereebro-snitch-spring-boot-starter</artifactId>
+                <version>${cereebro.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <build>
         <pluginManagement>

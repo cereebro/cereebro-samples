@@ -1,0 +1,23 @@
+server:
+  port: 9060
+
+spring:
+  application:
+    name: cereebro-server-eureka-addon
+  jackson:
+    serialization:
+      indent_output: true
+
+# Eureka Server : Standalone mode
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+    serviceUrl:
+      # won't be used
+      defaultZone: http://localhost:${server.port}/eureka
+
+cereebro:
+  server:
+    system:
+      name: cereebro-sample-system

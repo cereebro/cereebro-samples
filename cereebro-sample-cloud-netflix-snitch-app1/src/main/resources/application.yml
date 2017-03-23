@@ -1,0 +1,9 @@
+server:
+  port: 9062
+
+spring:
+  application:
+    name: cereebro-sample-netflix-app1
+  jackson:
+    serialization:
+      indent_output: true

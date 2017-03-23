@@ -1,0 +1,9 @@
+cereebro:
+  server:
+    system:
+      snitch:
+        resources: 
+          # This Snitch targets sample application : cereebro-sample-boot-snitch
+          - 'http://localhost:9091/cereebro/snitch'
+          - 'classpath:/snitches/xmen.json'
+          - 'classpath:/snitches/spiderman.json'

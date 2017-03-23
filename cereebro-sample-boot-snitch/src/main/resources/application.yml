@@ -1,0 +1,25 @@
+server:
+  port: 9091
+
+spring:
+  application:
+    name: iron-man
+  jackson:
+    serialization:
+      indent_output: true
+
+cereebro:
+  application:
+    component:
+      type: superhero
+    # Application relationships can also be documented from Spring configuration
+    dependencies:
+      -
+        component: 
+          name: ant-man
+          type: configuration-properties
+    consumers:
+      - 
+        component:
+          name: doctor-doom
+          type: configuration-properties

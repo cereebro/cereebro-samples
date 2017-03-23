@@ -1,0 +1,21 @@
+server:
+  port: 9061
+
+spring:
+  application:
+    name: cereebro-server-eureka-client
+  thymeleaf:
+    cache: false
+  jackson:
+    serialization:
+      indent_output: true
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: true
+
+cereebro:
+  server:
+    system:
+      name: 'cereebro-sample-system (eureka-client)'
