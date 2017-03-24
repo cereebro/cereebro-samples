@@ -31,7 +31,7 @@ It has a dependency on the previous application through a `@FeignClient` bean.
 
 ### cereebro-sample-cloud-netflix-server-eureka-addon
 
-Cereebro Server as a Eureka Server extension -- 2-in-1 server.  
+Cereebro Server as a Eureka Server extension -- 2-in-1.  
 You should see [app1](#cereebro-sample-cloud-netflix-server-eureka-app2) and 
 [app2](#cereebro-sample-cloud-netflix-server-eureka-app2) 
 registered as Eureka service instances. 
