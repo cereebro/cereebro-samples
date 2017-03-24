@@ -12,31 +12,54 @@ If you want to run them locally, you should activate the Spring profile named `l
 
 ## Spring Cloud Netflix samples
 
-### cereebro-sample-cloud-netflix-server-eureka-addon
-
-Cereebro Server as a Eureka Server extension.
-
-**TODO : See it deployed**
-
-### cereebro-sample-cloud-netflix-server-eureka-client
-
-Standalone Cereebro Server that acts as a Eureka Client, 
-consuming the Eureka Server's API.
-
-**TODO : See it deployed**
+Read [how to get started](https://github.com/cereebro/cereebro/wiki/Using-Cereebro-with-Spring-Cloud-Netflix-and-the-Eureka-Server) with Cereebro and Spring Cloud Netflix.
 
 ### cereebro-sample-cloud-netflix-server-eureka-app1
 
 Spring Cloud application shipping the Cereebro Snitch.
 
-**TODO : See it deployed**
+ * Snitch endpoint : https://cereebro-netflix-app1.herokuapp.com/cereebro/snitch
 
 ### cereebro-sample-cloud-netflix-server-eureka-app2
 
-Spring Cloud application shipping the Cereebro Snitch,  
-it has a dependency on the previous application.
+Spring Cloud application shipping the Cereebro Snitch.    
+It has a dependency on the previous application through a `@FeignClient` bean.
 
-**TODO : See it deployed**
+* Snitch endpoint : https://cereebro-netflix-app2.herokuapp.com/cereebro/snitch
+
+### cereebro-sample-cloud-netflix-server-eureka-addon
+
+Cereebro Server as a Eureka Server extension -- 2-in-1 server.  
+You should see [app1](#cereebro-sample-cloud-netflix-server-eureka-app2) and 
+[app2](#cereebro-sample-cloud-netflix-server-eureka-app2) 
+registered as Eureka service instances. 
+
+The Cereebro Snitch for Spring Cloud detects relationship from the application, 
+then pushes the information as additional meta-data on the Eureka Server.
+
+When you access the system graph page, the server browses its internal instance registry 
+to aggregate all the metadata available (from both app1 and app2).
+
+See it deployed :
+
+ * Eureka Dashboard : https://cereebro-netflix-eureka-server.herokuapp.com/
+ * System graph page : https://cereebro-netflix-eureka-server.herokuapp.com/cereebro/system
+ * System JSON resource : https://cereebro-netflix-eureka-server.herokuapp.com/cereebro/system.json
+
+### cereebro-sample-cloud-netflix-server-eureka-client
+
+Standalone Cereebro Server that acts as a Eureka Client, 
+consuming the Eureka Server API.  
+
+This is an alternative to [2-in-1](#cereebro-sample-cloud-netflix-server-eureka-addon) solution above.   
+The result is actually the same, the difference being that this standalone Cereebro Server 
+has to make a remote call to the Eureka Server HTTP API.  
+You can use this strategy if you don't want to mix up your service registry and component graph resolution.
+
+See it deployed : 
+
+ * System graph page : https://cereebro-netflix-eureka-client.herokuapp.com/cereebro/system
+ * System JSON resource : https://cereebro-netflix-eureka-client.herokuapp.com/cereebro/system.json
 
 ## Spring Boot samples
 
