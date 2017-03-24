@@ -7,3 +7,6 @@ spring:
   jackson:
     serialization:
       indent_output: true
+
+info:
+  description: Second Sample Application using the Cereebro Snitch for Spring Cloud Netflix

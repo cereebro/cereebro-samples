@@ -7,3 +7,15 @@ spring:
   jackson:
     serialization:
       indent_output: true
+
+cereebro:
+  application:
+    # Sample additional consumer
+    consumers: 
+      - 
+        component:
+          name: some-mobile-app
+          type: application/mobile
+
+info:
+  description: Sample Application using the Cereebro Snitch for Spring Cloud Netflix 
