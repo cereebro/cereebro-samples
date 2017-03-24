@@ -14,6 +14,8 @@ If you want to run them locally, you should activate the Spring profile named `l
 
 Read [how to get started](https://github.com/cereebro/cereebro/wiki/Using-Cereebro-with-Spring-Cloud-Netflix-and-the-Eureka-Server) with Cereebro and Spring Cloud Netflix.
 
+![cereebro-spring-cloud-netflix-component-diagram](https://cereebro.github.io/images/cereebro-eureka.png)
+
 ### cereebro-sample-cloud-netflix-server-eureka-app1
 
 Spring Cloud application shipping the Cereebro Snitch.
@@ -67,6 +69,8 @@ Using Spring Boot only, the Cereebro Server has to hold a list of every Snitch e
 When a user opens the `/cereebro/system` page, the server accesses each `Snitch` to reconstitute the whole graph. 
 Because we don't handle security at the moment, the `/cereebro/snitch` endpoint on each web application has to be 
 accessible by the Cereebro Server without any authentication mechanism.  
+
+![cereebro-spring-boot-component-diagram](https://cereebro.github.io/images/cereebro-boot.png)
 
 See the [Spring Cloud Netflix samples](#spring-cloud-netflix-samples) for a more powerful way to use Cereebro.
 
