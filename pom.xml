@@ -11,7 +11,7 @@
 
     <groupId>io.cereebro.sample</groupId>
     <artifactId>cereebro-samples</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>${project.groupId}:${project.artifactId}</name>
     <description>Cereebro Samples</description>
@@ -56,6 +56,17 @@
         </repository>
     </distributionManagement>
 
+    <repositories>
+        <repository>
+            <id>ossrh-snapshot</id>
+            <name>Sonatype OSSRH Snapshot Repository</name>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
     <properties>
         <java.version>1.8</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
@@ -64,7 +75,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <installAtEnd>true</installAtEnd>
         <deployAtEnd>true</deployAtEnd>
-        <cereebro.version>0.0.1</cereebro.version>
+        <cereebro.version>0.0.2-SNAPSHOT</cereebro.version>
     </properties>
 
     <modules>
