@@ -75,7 +75,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <installAtEnd>true</installAtEnd>
         <deployAtEnd>true</deployAtEnd>
-        <cereebro.version>0.0.2</cereebro.version>
+        <cereebro.version>0.0.4</cereebro.version>
     </properties>
 
     <modules>
