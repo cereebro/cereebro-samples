@@ -52,7 +52,7 @@ public class CereebroSampleNetflixSnitchApplication2 {
 
     }
 
-    @ConsumerHint(name = "you", type = "human")
+    @ConsumerHint(name = "fancy-app", type = "application/mobile/android")
     @Component
     public static class You {
 
