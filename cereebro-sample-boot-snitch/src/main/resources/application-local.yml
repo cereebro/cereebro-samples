@@ -1,0 +1,5 @@
+cereebro:
+  snitch:
+    log-on-startup: true
+    file:
+      enabled: true
