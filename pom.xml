@@ -79,8 +79,6 @@
     </properties>
 
     <modules>
-        <module>cereebro-sample-boot-snitch</module>
-        <module>cereebro-sample-boot-server</module>
         <module>cereebro-sample-cloud-netflix-server-eureka-addon</module>
         <module>cereebro-sample-cloud-netflix-server-eureka-client</module>
         <module>cereebro-sample-cloud-netflix-snitch-app1</module>
