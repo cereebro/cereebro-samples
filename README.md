@@ -19,7 +19,7 @@ If you want to run the samples locally, you should activate the Spring profile n
 
 Read [how to get started](https://github.com/cereebro/cereebro/wiki/Using-Cereebro-with-Spring-Cloud-Netflix-and-the-Eureka-Server) with Cereebro and Spring Cloud Netflix.
 
-![cereebro-spring-cloud-netflix-component-diagram](https://cereebro.github.io/images/cereebro-eureka.png)
+![cereebro-eureka-addon-diagram](https://cereebro.github.io/images/cereebro-eureka-addon.png)
 
 This sample is made of 3 main applications :
 
@@ -52,6 +52,9 @@ Standalone Cereebro Server that acts as a Eureka Client,
 consuming the Eureka Server API.  
 
 This is an alternative to [2-in-1](#cereebro-sample-cloud-netflix-server-eureka-addon) solution above.   
+
+![cereebro-eureka-client-diagram](https://cereebro.github.io/images/cereebro-eureka.png)
+
 The result is actually the same, the difference being that this standalone Cereebro Server 
 has to make a remote call to the Eureka Server HTTP API.  
 You can use this strategy if you don't want to mix up your service registry and component graph resolution.
