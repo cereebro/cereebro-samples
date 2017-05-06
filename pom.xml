@@ -75,12 +75,10 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <installAtEnd>true</installAtEnd>
         <deployAtEnd>true</deployAtEnd>
-        <cereebro.version>0.1.0</cereebro.version>
+        <cereebro.version>1.0.0</cereebro.version>
     </properties>
 
     <modules>
-        <module>cereebro-sample-boot-snitch</module>
-        <module>cereebro-sample-boot-server</module>
         <module>cereebro-sample-cloud-netflix-server-eureka-addon</module>
         <module>cereebro-sample-cloud-netflix-server-eureka-client</module>
         <module>cereebro-sample-cloud-netflix-snitch-app1</module>
