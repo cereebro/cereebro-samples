@@ -8,12 +8,12 @@
         <version>LATEST-SNAPSHOT</version>
     </parent>
 
-    <artifactId>cereebro-sample-cloud-netflix-snitch-app2</artifactId>
-    <name>${project.groupId}:${project.artifactId}</name>
-    <description>Spring Cloud Netflix application with Eureka registration - depends on app1 through FeignClient</description>
+    <artifactId>cereebro-sample-snitch-app1</artifactId>
+    <name>Sample Spring Boot application 1</name>
+    <description>Sample Spring Boot application 1 with Eureka registration</description>
 
     <properties>
-        <start-class>io.cereebro.sample.netflix.snitch.CereebroSampleNetflixSnitchApplication2</start-class>
+        <start-class>io.cereebro.sample.netflix.snitch.CereebroSampleNetflixSnitchApplication1</start-class>
     </properties>
 
     <dependencies>
@@ -39,24 +39,24 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-neo4j</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.neo4j</groupId>
-            <artifactId>neo4j-ogm-embedded-driver</artifactId>
-            <version>${neo4j-ogm.version}</version>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-amqp</artifactId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
-        <!-- Can't use both elasticsearch and Neo4j embedded (Lucene version conflict) -->
-        <!-- 
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
         </dependency>
-         -->
+        <dependency>
+            <groupId>de.flapdoodle.embed</groupId>
+            <artifactId>de.flapdoodle.embed.mongo</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.hsqldb</groupId>
+            <artifactId>hsqldb</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
@@ -78,6 +78,5 @@
             </plugin>
         </plugins>
     </build>
-
 
 </project>
