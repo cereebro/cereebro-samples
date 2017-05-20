@@ -13,7 +13,7 @@
     <description>Sample Spring Boot application 2 with Eureka registration</description>
 
     <properties>
-        <start-class>io.cereebro.sample.netflix.snitch.CereebroSampleNetflixSnitchApplication2</start-class>
+        <start-class>io.cereebro.sample.snitch.CereebroSampleSnitchApplication2</start-class>
     </properties>
 
     <dependencies>
@@ -50,13 +50,13 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-amqp</artifactId>
         </dependency>
-        <!-- Can't use both elasticsearch and Neo4j embedded (Lucene version conflict) -->
-        <!-- 
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-zuul</artifactId>
         </dependency>
-         -->
+        <!-- Can't use both elasticsearch and Neo4j embedded (Lucene version conflict) -->
+        <!-- <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-data-elasticsearch</artifactId> 
+            </dependency> -->
     </dependencies>
 
     <build>

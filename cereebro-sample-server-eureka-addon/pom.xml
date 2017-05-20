@@ -13,7 +13,7 @@
     <description>Sample Eureka Server with Cereebro Server add-on</description>
 
     <properties>
-        <start-class>io.cereebro.sample.netflix.server.CereebroSampleServerEurekaAddOnApplication</start-class>
+        <start-class>io.cereebro.sample.server.CereebroSampleServerEurekaAddOnApplication</start-class>
     </properties>
 
     <dependencies>

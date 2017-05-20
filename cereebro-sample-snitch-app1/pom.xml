@@ -13,7 +13,7 @@
     <description>Sample Spring Boot application 1 with Eureka registration</description>
 
     <properties>
-        <start-class>io.cereebro.sample.netflix.snitch.CereebroSampleNetflixSnitchApplication1</start-class>
+        <start-class>io.cereebro.sample.snitch.CereebroSampleSnitchApplication1</start-class>
     </properties>
 
     <dependencies>

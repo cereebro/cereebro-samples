@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.cereebro.sample.netflix.snitch;
+package io.cereebro.sample.snitch;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.actuate.health.Health;
@@ -21,6 +21,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.feign.EnableFeignClients;
 import org.springframework.cloud.netflix.feign.FeignClient;
+import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -28,11 +29,12 @@ import io.cereebro.core.annotation.ConsumerHint;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-@EnableFeignClients(basePackageClasses = CereebroSampleNetflixSnitchApplication2.class)
-public class CereebroSampleNetflixSnitchApplication2 {
+@EnableFeignClients(basePackageClasses = CereebroSampleSnitchApplication2.class)
+@EnableZuulProxy
+public class CereebroSampleSnitchApplication2 {
 
     public static void main(String[] args) {
-        SpringApplication.run(CereebroSampleNetflixSnitchApplication2.class, args);
+        SpringApplication.run(CereebroSampleSnitchApplication2.class, args);
     }
 
     /** Detected as a dependency to sample app1. */
@@ -54,7 +56,7 @@ public class CereebroSampleNetflixSnitchApplication2 {
 
     @ConsumerHint(name = "fancy-app", type = "application/mobile/android")
     @Component
-    public static class You {
+    public static class FancyMobileApp {
 
     }
 

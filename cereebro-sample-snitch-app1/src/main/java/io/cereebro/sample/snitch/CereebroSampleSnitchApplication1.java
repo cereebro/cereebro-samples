@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.cereebro.sample.netflix.snitch;
+package io.cereebro.sample.snitch;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -21,10 +21,10 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-public class CereebroSampleNetflixSnitchApplication1 {
+public class CereebroSampleSnitchApplication1 {
 
     public static void main(String[] args) {
-        SpringApplication.run(CereebroSampleNetflixSnitchApplication1.class, args);
+        SpringApplication.run(CereebroSampleSnitchApplication1.class, args);
     }
 
 }
