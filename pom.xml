@@ -13,7 +13,7 @@
     <artifactId>cereebro-samples</artifactId>
     <version>LATEST-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>${project.groupId}:${project.artifactId}</name>
+    <name>Cereebro Samples</name>
     <description>Cereebro Samples</description>
     <url>http://cereebro.io</url>
     <inceptionYear>2017</inceptionYear>
@@ -75,14 +75,14 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <installAtEnd>true</installAtEnd>
         <deployAtEnd>true</deployAtEnd>
-        <cereebro.version>1.0.0</cereebro.version>
+        <cereebro.version>1.1.0</cereebro.version>
     </properties>
 
     <modules>
-        <module>cereebro-sample-cloud-netflix-server-eureka-addon</module>
-        <module>cereebro-sample-cloud-netflix-server-eureka-client</module>
-        <module>cereebro-sample-cloud-netflix-snitch-app1</module>
-        <module>cereebro-sample-cloud-netflix-snitch-app2</module>
+        <module>cereebro-sample-server-eureka-addon</module>
+        <module>cereebro-sample-server-eureka-client</module>
+        <module>cereebro-sample-snitch-app1</module>
+        <module>cereebro-sample-snitch-app2</module>
     </modules>
 
     <dependencyManagement>
@@ -90,22 +90,7 @@
             <!-- Cereebro starters -->
             <dependency>
                 <groupId>io.cereebro</groupId>
-                <artifactId>cereebro-server-eureka-addon-spring-cloud-starter</artifactId>
-                <version>${cereebro.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.cereebro</groupId>
                 <artifactId>cereebro-server-spring-boot-starter</artifactId>
-                <version>${cereebro.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.cereebro</groupId>
-                <artifactId>cereebro-eureka-client-spring-cloud-starter</artifactId>
-                <version>${cereebro.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.cereebro</groupId>
-                <artifactId>cereebro-snitch-netflix-spring-cloud-starter</artifactId>
                 <version>${cereebro.version}</version>
             </dependency>
             <dependency>

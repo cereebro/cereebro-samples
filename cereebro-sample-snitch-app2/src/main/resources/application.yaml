@@ -1,0 +1,31 @@
+server:
+  port: 9063
+
+spring:
+  application:
+    name: cereebro-sample-netflix-app2
+  jackson:
+    serialization:
+      indent_output: true
+
+info:
+  description: Second Sample Application using the Cereebro Snitch for Spring Cloud Netflix
+
+zuul:
+  routes:
+    # Will be detected as a dependency "proxied-service-1"
+    proxied-service-1:
+      path: /one/**
+    # Will be detected as a dependency on "proxied-service-2"
+    two:
+      path: /two/**
+      serviceId: proxied-service-2
+    # Won't be detected because of the fixed URL
+    proxied-service-3:
+      path: /three/**
+      url: http://three.nope
+    # Won't be detected because of the fixed URL
+    proxied-service-4:
+      path: /four/**
+      serviceId: four 
+      url: https://four.nope
