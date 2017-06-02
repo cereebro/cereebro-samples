@@ -17,7 +17,7 @@ If you want to run the samples locally, you should activate the Spring profile n
 
 ## Details
 
-Read [how to get started](https://github.com/cereebro/cereebro/wiki/Using-Cereebro-with-Spring-Cloud-Netflix-and-the-Eureka-Server) with Cereebro and Spring Cloud Netflix.
+Read [how to get started](http://docs.cereebro.io/Getting-Started) with Cereebro and Spring Cloud Netflix.
 
 ![cereebro-eureka-addon-diagram](https://cereebro.github.io/images/cereebro-eureka-addon.png)
 
