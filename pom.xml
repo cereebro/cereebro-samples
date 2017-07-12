@@ -6,7 +6,7 @@
     <parent>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-starter-parent</artifactId>
-        <version>Camden.SR6</version>
+        <version>Dalston.SR1</version>
     </parent>
 
     <groupId>io.cereebro.sample</groupId>
@@ -75,7 +75,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <installAtEnd>true</installAtEnd>
         <deployAtEnd>true</deployAtEnd>
-        <cereebro.version>1.1.0</cereebro.version>
+        <cereebro.version>1.2.0-SNAPSHOT</cereebro.version>
     </properties>
 
     <modules>
