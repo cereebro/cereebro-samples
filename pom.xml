@@ -4,9 +4,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-starter-parent</artifactId>
-        <version>Dalston.SR1</version>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.6.RELEASE</version>
     </parent>
 
     <groupId>io.cereebro.sample</groupId>
@@ -76,6 +76,7 @@
         <installAtEnd>true</installAtEnd>
         <deployAtEnd>true</deployAtEnd>
         <cereebro.version>1.2.2-SNAPSHOT</cereebro.version>
+        <spring-cloud.version>Dalston.SR2</spring-cloud.version>
     </properties>
 
     <modules>
@@ -98,8 +99,23 @@
                 <artifactId>cereebro-snitch-spring-boot-starter</artifactId>
                 <version>${cereebro.version}</version>
             </dependency>
+            <!-- Spring Cloud -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+    </dependencies>
 
     <build>
         <pluginManagement>
