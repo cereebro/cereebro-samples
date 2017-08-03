@@ -17,11 +17,13 @@ package io.cereebro.sample.server;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 import io.cereebro.server.EnableCereebroServer;
 
 @SpringBootApplication
 @EnableCereebroServer
+@EnableDiscoveryClient
 public class CereebroSampleServerEurekaClientApplication {
 
     public static void main(String[] args) {
