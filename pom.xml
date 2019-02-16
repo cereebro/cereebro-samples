@@ -6,7 +6,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.5.6.RELEASE</version>
+        <version>2.0.8.RELEASE</version>
     </parent>
 
     <groupId>io.cereebro.sample</groupId>
@@ -75,8 +75,8 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <installAtEnd>true</installAtEnd>
         <deployAtEnd>true</deployAtEnd>
-        <cereebro.version>1.2.3</cereebro.version>
-        <spring-cloud.version>Dalston.SR2</spring-cloud.version>
+        <cereebro.version>2.0-SNAPSHOT</cereebro.version>
+        <spring-cloud.version>Finchley.SR2</spring-cloud.version>
     </properties>
 
     <modules>
