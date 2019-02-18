@@ -1,6 +1,5 @@
-security:
-  basic:
-    enabled: false
-management:
+spring:
   security:
-    enabled: false
+    user:
+      name: eureka
+      password: '{noop}eureka'
