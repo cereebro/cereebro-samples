@@ -44,7 +44,7 @@ public class CereebroSampleServerEurekaAddOnApplication {
             http
                 .authorizeRequests()
                     .requestMatchers(EndpointRequest.to(HealthEndpoint.class)).permitAll()
-                    .antMatchers("/").permitAll()
+                    .antMatchers("/cereebro/*").permitAll()
                     .anyRequest().authenticated()
                 .and().httpBasic()
                 .and().csrf().disable();

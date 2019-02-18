@@ -29,3 +29,5 @@ zuul:
       path: /four/**
       serviceId: four 
       url: https://four.nope
+
+management.endpoints.web.exposure.include: health, cereebro

@@ -23,3 +23,5 @@ cereebro:
   server:
     system:
       name: cereebro-sample-system
+
+management.endpoints.web.exposure.include: health, cereebro

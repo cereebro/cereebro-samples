@@ -32,7 +32,7 @@ public class CereebroSampleSnitchApplication1 {
     @RestController
     public static class HelloController {
 
-        @GetMapping
+        @GetMapping("/")
         public String hello() {
             return "hello";
         }

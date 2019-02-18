@@ -19,3 +19,5 @@ cereebro:
 
 info:
   description: Sample Application using the Cereebro Snitch for Spring Cloud Netflix 
+
+management.endpoints.web.exposure.include: health, cereebro

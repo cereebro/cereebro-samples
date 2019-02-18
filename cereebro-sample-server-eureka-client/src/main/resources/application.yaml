@@ -19,3 +19,5 @@ cereebro:
   server:
     system:
       name: 'cereebro-sample-system (through eureka-client)'
+
+management.endpoints.web.exposure.include: health, cereebro
